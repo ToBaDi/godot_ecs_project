@@ -16,9 +16,15 @@ _global_script_class_icons={
 [application]
 
 config/name="godot_ecs_project"
-config/icon="res://icon.png"
+run/main_scene="res://aban/main/main.tscn"
+config/icon="res://assets/icon.png"
+
+[physics]
+
+2d/thread_model=2
 
 [rendering]
 
 quality/driver/driver_name="GLES2"
-environment/default_environment="res://default_env.tres"
+threads/thread_model=2
+environment/default_environment="res://assets/default_env.tres"

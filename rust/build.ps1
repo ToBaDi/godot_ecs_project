@@ -1,2 +1,2 @@
 cargo build --release
-Copy-Item .\target\release\azdara.dll -Destination ..\godot\aban\lib\azdara.dll -Force
+Copy-Item .\target\release\godot_ecs_project.dll -Destination ..\godot\aban\lib\game.dll -Force

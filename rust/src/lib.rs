@@ -34,20 +34,7 @@ impl Game {
     }
 
     #[export]
-    fn ready(&mut self, _owner: &GameObjectType, scenario_rid: Rid, _viewport_rid: Rid) {
-        let visual_server = unsafe { gdnative::api::VisualServer::godot_singleton() };
-
-        self.resources.insert(visual_server);
-        self.resources.insert(res::Scenario::new(scenario_rid));
-
-        let instance = visual_server.instance_create();
-        visual_server.instance_set_scenario(instance, scenario_rid);
-
-        let mesh = visual_server.make_sphere_mesh(4, 4, 1f64);
-        visual_server.instance_set_base(instance, mesh);
-
-        // self.world.push((mesh,));
-
+    fn ready(&mut self, _owner: &GameObjectType) {
         self.init.execute(&mut self.world, &mut self.resources)
     }
 

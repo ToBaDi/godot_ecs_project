@@ -19,6 +19,77 @@ config/name="godot_ecs_project"
 run/main_scene="res://aban/main/main.tscn"
 config/icon="res://assets/icon.png"
 
+[input]
+
+camera_up={
+"deadzone": 0.5,
+"events": [  ]
+}
+camera_right={
+"deadzone": 0.5,
+"events": [  ]
+}
+walk_up={
+"deadzone": 0.5,
+"events": [  ]
+}
+walk_right={
+"deadzone": 0.5,
+"events": [  ]
+}
+control={
+"deadzone": 0.5,
+"events": [  ]
+}
+action={
+"deadzone": 0.5,
+"events": [  ]
+}
+run={
+"deadzone": 0.5,
+"events": [  ]
+}
+jump={
+"deadzone": 0.5,
+"events": [  ]
+}
+draw_item={
+"deadzone": 0.5,
+"events": [  ]
+}
+camera_zoom={
+"deadzone": 0.5,
+"events": [  ]
+}
+camera_side={
+"deadzone": 0.5,
+"events": [  ]
+}
+pause={
+"deadzone": 0.5,
+"events": [  ]
+}
+inventory={
+"deadzone": 0.5,
+"events": [  ]
+}
+item_1={
+"deadzone": 0.5,
+"events": [  ]
+}
+item_2={
+"deadzone": 0.5,
+"events": [  ]
+}
+item_3={
+"deadzone": 0.5,
+"events": [  ]
+}
+item_4={
+"deadzone": 0.5,
+"events": [  ]
+}
+
 [physics]
 
 2d/thread_model=2
